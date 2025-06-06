@@ -10,6 +10,10 @@ public static class Program
             Console.WriteLine("[S] - Student");
             Console.WriteLine("[T] - Train");
             Console.WriteLine("[N] - Numbers");
+<<<<<<< HEAD
+=======
+            Console.WriteLine("[C] - Counter");
+>>>>>>> counter
             Console.WriteLine("[Q] - Finish");
             string? command = Console.ReadLine();
             switch (command.ToUpper())
@@ -25,6 +29,13 @@ public static class Program
                 case "N":
                     Console.Clear();
                     NumbersProgram.Run();
+<<<<<<< HEAD
+=======
+                    continue;
+                case "C":
+                    Console.Clear();
+                    CounterProgram.Run();
+>>>>>>> counter
                     continue;
                 case "Q":
                     Console.Clear();
