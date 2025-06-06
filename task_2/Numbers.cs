@@ -21,4 +21,14 @@ public class Numbers
         Second = value;
         return Second;
     }
+
+    public int Sum()
+    {
+        return First + Second;
+    }
+
+    public int Maximal()
+    {
+        return int.Max(First, Second);
+    }
 }

@@ -54,6 +54,8 @@ internal static class NumbersProgram
                     Console.Clear();
                     Console.Write("Write number: ");
                     numbers.SetSecond(int.Parse(Console.ReadLine() ?? "0"));
+                    Console.Clear();
+                    break;
                 case "Q":
                     Console.Clear();
                     break;
@@ -82,6 +84,20 @@ internal static class NumbersProgram
                 case "F":
                     Console.Clear();
                     numbers.PrintFirst();
+                    Console.Write("Press Enter");
+                    Console.ReadLine();
+                    Console.Clear();
+                    break;
+                case "P":
+                    Console.Clear();
+                    Console.WriteLine($"Sum: {numbers.Sum()}");
+                    Console.Write("Press Enter");
+                    Console.ReadLine();
+                    Console.Clear();
+                    break;
+                case "M":
+                    Console.Clear();
+                    Console.WriteLine($"Maximal: {numbers.Maximal()}");
                     Console.Write("Press Enter");
                     Console.ReadLine();
                     Console.Clear();
