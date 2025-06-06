@@ -8,6 +8,7 @@ public static class Program
         {
             Console.WriteLine("Programs:");
             Console.WriteLine("[T] - Train");
+            Console.WriteLine("[S] - Student");
             Console.WriteLine("[Q] - Finish");
             string? command = Console.ReadLine();
             switch (command.ToUpper())
@@ -15,6 +16,10 @@ public static class Program
                 case "T":
                     Console.Clear();
                     TrainProgram.Run();
+                    continue;
+                case "S":
+                    Console.Clear();
+                    StudentProgram.Run();
                     continue;
                 case "Q":
                     Console.Clear();
