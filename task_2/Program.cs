@@ -11,6 +11,10 @@ public static class Program
             string? command = Console.ReadLine();
             switch (command.ToUpper())
             {
+                case "P":
+                    Console.Clear();
+                    Console.WriteLine("Printing");
+                    break;
                 case "Q":
                     Console.Clear();
                     Console.WriteLine("Finish");
