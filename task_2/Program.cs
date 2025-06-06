@@ -7,13 +7,14 @@ public static class Program
         while (true)
         {
             Console.WriteLine("Programs:");
+            Console.WriteLine("[P] - Print");
             Console.WriteLine("[Q] - Finish");
             string? command = Console.ReadLine();
             switch (command.ToUpper())
             {
                 case "P":
                     Console.Clear();
-                    Console.WriteLine("Printing");
+                    Console.WriteLine("Another Printing");
                     break;
                 case "Q":
                     Console.Clear();
