@@ -50,6 +50,10 @@ internal static class NumbersProgram
                     numbers.SetFirst(int.Parse(Console.ReadLine() ?? "0"));
                     Console.Clear();
                     break;
+                case "S":
+                    Console.Clear();
+                    Console.Write("Write number: ");
+                    numbers.SetSecond(int.Parse(Console.ReadLine() ?? "0"));
                 case "Q":
                     Console.Clear();
                     break;
