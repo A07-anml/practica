@@ -7,19 +7,29 @@ public static class Program
         while (true)
         {
             Console.WriteLine("Programs:");
-            Console.WriteLine("[T] - Train");
             Console.WriteLine("[S] - Student");
+            Console.WriteLine("[T] - Train");
+            Console.WriteLine("[N] - Numbers");
+            Console.WriteLine("[C] - Counter");
             Console.WriteLine("[Q] - Finish");
             string? command = Console.ReadLine();
             switch (command.ToUpper())
             {
+                case "S":
+                    Console.Clear();
+                    StudentProgram.Run();
+                    continue;
                 case "T":
                     Console.Clear();
                     TrainProgram.Run();
                     continue;
-                case "S":
+                case "N":
                     Console.Clear();
-                    StudentProgram.Run();
+                    NumbersProgram.Run();
+                    continue;
+                case "C":
+                    Console.Clear();
+                    CounterProgram.Run();
                     continue;
                 case "Q":
                     Console.Clear();
