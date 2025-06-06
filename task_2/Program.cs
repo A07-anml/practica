@@ -7,15 +7,15 @@ public static class Program
         while (true)
         {
             Console.WriteLine("Programs:");
-            Console.WriteLine("[P] - Print");
+            Console.WriteLine("[T] - Train");
             Console.WriteLine("[Q] - Finish");
             string? command = Console.ReadLine();
             switch (command.ToUpper())
             {
-                case "P":
+                case "T":
                     Console.Clear();
-                    Console.WriteLine("Another Printing");
-                    break;
+                    TrainProgram.Run();
+                    continue;
                 case "Q":
                     Console.Clear();
                     Console.WriteLine("Finish");
